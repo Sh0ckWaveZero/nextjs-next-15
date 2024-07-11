@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Prompt } from 'next/font/google'
+import { Noto_Sans_Thai } from 'next/font/google'
 import './globals.css'
 
-const prompt = Prompt({
+const notoSansThai = Noto_Sans_Thai({
   subsets: ['thai', 'latin-ext', 'latin'],
   weight: '400',
 })
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={prompt.className}>{children}</body>
+      <body className={notoSansThai.className}>{children}</body>
     </html>
   )
 }
